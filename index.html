@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="kb.png">
     <script src="validate.js"></script>
-    <script src="highlight.js"></script>
+    <style>
+    :root::highlight(example-highlight) {
+      background-color: yellow;
+      color: blue;
+    }
+    </style>
 </head>
 <header style="visibility: visible;" id="menuBar">
     <div style="display:block;position:absolute;top: 50%;left:50%;transform: translate(-50%,-50%);">
@@ -49,6 +54,13 @@
   }
     </script>
   <script>
+  </script>
+  <script>
+        let r = new Range();
+        r.setStart(document.body, 0);
+        r.setEnd(document.body, 2);
+
+        CSS.highlights.add(new Highlight("example-highlight", r));
   </script>
 </body>
 <footer>
