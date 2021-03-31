@@ -51,8 +51,3 @@ header {
     border-radius: 5px;
     font-size: 13px;
 }
-
-:root::highlight(example-highlight) {
-    background-color:red;
-    color:yellow;
-}
